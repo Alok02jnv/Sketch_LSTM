@@ -1,7 +1,6 @@
 # LSTM-Based Sketch Generation for Robotic Drawing
 
 This project implements a **class-conditional LSTM-based sketch generator** trained on the **Google QuickDraw dataset**.  
-The trained model generates 2D sketch trajectories that can be sent to **MATLAB** for **serial manipulator drawing**.
 
 ---
 
@@ -22,11 +21,6 @@ The pipeline consists of:
 3. **Inference**
    - Autoregressive generation (no ground truth at test time)
    - Produces `(Δx, Δy)` → converted to `(x, y)` coordinates
-
-4. **MATLAB Integration**
-   - Python exports full `(x, y)` trajectory to CSV
-   - MATLAB performs inverse kinematics
-   - Serial manipulator draws the sketch
 
 ---
 
